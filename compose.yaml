@@ -11,14 +11,9 @@ services:
       - type: bind
         source: .
         target: /app
-      - type: volume
-        source: node_modules
-        target: /app/node_modules
     environment:
       - WATCHPACK_POLLING=true
     ports:
       - "3100:3000"
     # start development server
-    #command: bash -c "npm run dev"
-volumes:
-  node_modules:
+    command: bash -c "npm run dev"

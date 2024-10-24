@@ -11,8 +11,8 @@ RUN npm install
 
 RUN apt-get install -y curl
 
-#RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
-#ENV PATH=/root/.cargo/bin:$PATH
+ENV PATH=/root/.cargo/bin:$PATH
 
-#RUN cargo install wasm-pack
+RUN cargo install wasm-pack

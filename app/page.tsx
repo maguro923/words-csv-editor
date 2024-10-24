@@ -1,6 +1,8 @@
 export default function Home() {
   return (
-    <p>Hi!</p>
+    <div className="grid grid-cols-12 w-full">
+      <p className="col-span-12 text-center">Hello, world!</p>
+    </div>
   );
 }
 
