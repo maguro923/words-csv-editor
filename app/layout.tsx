@@ -1,4 +1,10 @@
+import type { Metadata } from 'next';
 import './globals.css';
+
+export const metadata: Metadata = {
+  title: 'Study English Words for admins',
+  description: 'study english words for admins web tool',
+};
 
 export default function RootLayout({
   children,
