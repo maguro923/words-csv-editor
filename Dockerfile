@@ -15,4 +15,6 @@ RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 ENV PATH=/root/.cargo/bin:$PATH
 
+ENV CARGO_BUILD_TARGET_DIR=/tmp/target
+
 RUN cargo install wasm-pack
