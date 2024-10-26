@@ -7,9 +7,10 @@ export default function Home() {
       <Header />
       <h1 className="col-span-12 text-center">Hello, world!</h1>
       <div className="col-span-12">
-        <Link href="/search" className="btn btn-primary">About</Link>
+        <Link href="/search" className="btn btn-primary">
+          About
+        </Link>
       </div>
     </div>
   );
 }
-

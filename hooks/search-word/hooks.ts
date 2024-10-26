@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react';
-import init, { get_word_distances_sorted } from './pkg';
+import { useEffect, useState } from "react";
+import init, { get_word_distances_sorted } from "./pkg";
 
 /*
 CSV should follow RFC4180 Format
 https://www.rfc-editor.org/rfc/rfc4180.txt
 */
 export const useSearchWord = (CSVPath: string, CSVColumnPosition: number) => {
-  const [csv, setCSV] = useState<string>('');
+  const [csv, setCSV] = useState<string>("");
   useEffect(() => {
     fetch(CSVPath)
       .then((v) => v.text())
